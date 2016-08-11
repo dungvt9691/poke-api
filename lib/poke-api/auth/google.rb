@@ -45,11 +45,11 @@ module Poke
 
           body = {
             grant_type: 'refresh_token',
-            redirect_uri: 'urn:ietf:wg:oauth:2.0:oob',
+            redirect_uri: 'http://pokestats.vn:3000/callback/google',
             refresh_token: @refresh_token,
             scope: 'email',
-            client_secret: 'NCjF1TLi2CcY6t5mt0ZveuL7',
-            client_id: '848232511240-73ri3t7plvk96pj4f85uj8otdat2alem.apps.googleusercontent.com',
+            client_secret: 'j0v1ORfchhDFQbrFqP9fLaXs',
+            client_id: '716019985230-3ed6c43eqqr8575rrlpc8gafad6sj3na.apps.googleusercontent.com',
           }
 
           resp = HTTPClient.new.post('https://accounts.google.com/o/oauth2/token', body).body
